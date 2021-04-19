@@ -96,6 +96,7 @@ header {
 .cards {
     max-width: 800px;
     margin: 0 auto;
+    margin-bottom: 30px;
     
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -138,6 +139,8 @@ header {
     height: 100%;
     position: fixed;
     top: 0;
+    opacity: 0;
+    visibility: hidden;
 }
 
 .modal {
@@ -154,4 +157,11 @@ header {
     right: 8px;
     top: 8px;
     cursor: pointer;
+}
+
+/* === MODAL .ACTIVE === */
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
 }
