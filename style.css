@@ -110,6 +110,7 @@ header {
 
 .card_image_container img {
    width: 100%; 
+   cursor: pointer;
 }
 
 .card_content, .card_info {
@@ -146,7 +147,7 @@ header {
 .modal {
     background-color: white;
     width: 90%;
-    height: 90%;
+    height: 70%;
     margin: 5vh auto;
     position: relative;
 }
@@ -164,4 +165,11 @@ header {
 .modal-overlay.active {
     opacity: 1;
     visibility: visible;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
 }
